@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="Formulario" action="">
+        <h1 id="titulo">formulario carga de datos</h1>
+        <div class="nombre-apellido">
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" placeholder="apellido">
+            <label for="nombre">nombre</label>
+            <input type="text" id="apellido" placeholder="nombre">
+        </div>
+            <br>
+        <div class="datos-personales">
+            <label for="DNI">Nro DNI</label>
+            <input type="number" id="DNI" placeholder="DNI">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" placeholder="Fecha de nacimiento">
+        </div>
+            <br>
+        <div class="domicilio-localidad">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio" placeholder="domicilio">
+            <label for="localidad">Localidad</label>
+            <input type="text" id="localidad" placeholder="localidad">
+        </div>
+        <h3><b>Idiomas que conoce</b></h3>
+        <h5>nivel de conocimiento</h5>
+        <div>
+            <table>   
+            <tr>
+                <td>
+                
+                    <label for="español" id="lenguajes">Español</label>
+                    <input type="checkbox" value="español" id="español" checked>
+                </td>
+                <td id="barras">
+                    <label for="barra1" class="range-label">0-------50-------100</label>
+                    <input type="range" min="0" max="100" id="españolbarra">
+                </td>
+            </tr>  
+            <tr>    
+                <td>
+                    <label for="ingles" id="lenguajes">Inglés</label>
+                    <input type="checkbox" value="ingles" id="ingles" checked>
+                </td>
+                <td id="barras">
+                    <label for="barra2" class="range-label">0-------50-------100</label>
+                    <input type="range" min="0" max="100" id="inglesbarra">
+                </td>
+            </tr>
+            <tr>   
+                <td>
+                    <label for="frances" id="lenguajes">Francés</label>
+                    <input type="checkbox" value="frances" id="frances" checked>
+                </td>
+                <td id="barras">
+                    <label for="barra3" class="range-label">0-------50-------100</label>
+                    <input type="range" min="0" max="100" id="francesbarra">
+                </td>
+            </tr>
+            <tr>   
+                <td>
+                    <label for="chino" id="lenguajes">Chino</label>
+                    <input type="checkbox" value="chino" id="chino" checked>
+                </td>
+                <td id="barras">
+                    <label for="barra4" class="range-label">0-------50-------100</label>
+                    <input type="range" min="0" max="100" id="chinobarra">
+                </td>
+            </tr>
+            </table>
+        </div>
+        <div>
+            <button type="submit" class="enviar">enviar</button>
+            <button type="reset" class="borrar">borrar</button>
+        </div>     
+    </form>
+    <script>
+        const loginForm = document.getElementById('Formulario')
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const nombre = document.getElementById('nombre').value
+            const apellido = document.getElementById('apellido').value
+            const DNI = document.getElementById('dni').value
+            const nacimiento = document.getElementById('nacimiento').value
+            const domicilio = document.getElementById('domicilio').value
+            const localidad = document.getElementById('localidad').value
+            const español = document.getElementById('español').value
+            const españolbarra = document.getElementById('españolbarra').value
+            const ingles = document.getElementById('ingles').value
+            const inglesbarra = document.getElementById('inglesbarra').value
+            const frances = document.getElementById('frances').value
+            const francesbarra = document.getElementById('francesbarra').value
+            const chino = document.getElementById('chino').value
+            const chinobarra = document.getElementById('chinobarra').value 
+            console.log({nombre, apellido, DNI, nacimiento, domicilio, localidad,español,españolbarra,ingles,inglesbarra,frances,francesbarra,chino,chinobarra})
+        })
+    </script>
+</body>
+</html>

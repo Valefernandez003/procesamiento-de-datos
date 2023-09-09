@@ -1,0 +1,29 @@
+#titulo{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 12.5%;
+}
+.nombre-apellido {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+.datos-personales{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+.datos-personales input{
+    color: red;
+}
+.domicilio-localidad{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+label.range-label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
